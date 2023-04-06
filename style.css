@@ -54,10 +54,6 @@ input {
     text-align: center;
 }
 
-.greeting p {
-    color: #b66efb;
-}
-
 .container {
     width: 900px;
     padding: 5px 15px;
@@ -86,9 +82,4 @@ input {
 
 #row div {
     line-height: 0.8;
-}
-
-#spanDate {
-    font-size: smaller;
-    color: #fb5f90;
 }
