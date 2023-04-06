@@ -39,12 +39,6 @@ a.nested:hover {
     color: #161219;
 }
 
-hr {
-    border: 0;
-    border-top: 5px dashed #fb89ad;
-    margin: 35px 5px;
-}
-
 input {
     background-color: #1d2c47;
     color: #e1bcc8;
