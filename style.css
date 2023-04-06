@@ -1,0 +1,100 @@
+@font-face {
+    font-family: Hack;
+    src: url(assets/fonts/Hack-Regular.ttf);
+}
+
+*:focus { /* removes outline from focused elements */
+    outline: 0px none transparent;
+}
+
+body {
+    background: linear-gradient(rgba(22, 18, 25, 0.95), rgba(22, 18, 25, 0.95)), url(assets/images/bg.jpg);
+    color: #e1bcc8;
+    font-family: 'Hack', monospace;
+}
+
+h1 {
+    color: #fb89ad;
+    font-weight: initial;
+}
+
+a {
+    color: #67a2fd;
+    text-decoration: none;
+    padding: 2px 4px;
+}
+
+a:hover {
+    color: #b56efa;
+    text-decoration: underline;
+    background-color: #1d2c47;
+}
+
+a.nested {
+    color: #b66efb;
+}
+
+a.nested:hover {
+    background-color: #8752ba;
+    color: #161219;
+}
+
+hr {
+    border: 0;
+    border-top: 5px dashed #fb89ad;
+    margin: 35px 5px;
+}
+
+input {
+    background-color: #1d2c47;
+    color: #e1bcc8;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Hack', monospace;
+    border: 2.5px ridge #fb89ad;
+    border-radius: 5px;
+    letter-spacing: 4px;
+}
+
+.greeting {
+    text-align: center;
+}
+
+.greeting p {
+    color: #b66efb;
+}
+
+.container {
+    width: 900px;
+    padding: 5px 15px;
+    border: 2px solid #e1bcc8;
+    border-radius: 5px;
+    box-shadow: 0 0 8px #1d2c47, 0 0 16px #1d2c47;
+    margin: 35px auto;
+    background-color: #161219;
+}
+
+.searchbar {
+    margin: 45px 5px;
+}
+
+.searchbar form {
+    width: 300px;
+    margin: 0 auto;
+}
+
+#row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #b56efa;
+}
+
+#row div {
+    line-height: 0.8;
+}
+
+#spanDate {
+    font-size: smaller;
+    color: #fb5f90;
+}

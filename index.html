@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>welcome home</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+
+            <div class="greeting">
+                <h1>TERVETULOA, ELIAS</h1>
+                <p>[ <span id="spanDate"></span> ]</p>
+            </div>
+
+            <!-- some of these should automatically redirect to
+                 privacy-friendly frontends if you have
+                 libredirect/redirector installed -->
+
+            <div id="row">
+                <div>
+                    <p><a href="https://4chan.org/g/">/g/</a></p>
+                    <p><a href="https://lainchan.org/%CE%BB/">/λ/</a></p>
+                    <p><a href="https://lainchan.org/%CE%A9/">/Ω/</a></p>
+                    <p><a href="https://reddit.com">reddit</a></p>
+                    <p><a href="https://ylilauta.org">ylilauta</a></p>
+                    <p>&nbsp;&#x2514;&#x2574;<a href="https://ylilauta.org/international/" class="nested">/international/</a></p>
+                    <p><a href="https://wiki.archlinux.org">arch wiki</a></p>
+                    <p><a href="https://suckless.org">suckless</a></p>
+                </div>
+
+                <div>
+                    <p><a href="https://twitter.com">twitter</a></p>
+                    <p><a href="https://youtube.com">youtube</a></p>
+                    <p><a href="https://github.com">github</a></p>
+                    <p><a href="https://fedora.email">mail</a></p>
+                    <p><a href="https://wiki.installgentoo.com">installgentoo wiki</a></p>
+                    <p><a href="https://neocities.org">neocities</a></p>
+                    <p><a href="https://en.wikipedia.org">wikipedia</a></p>
+                    <p><a href="https://basedsites.neocities.org/">/g/'s based sites</a></p>
+                </div>
+
+                <div>
+                    <p><a href="https://disroot.org">disroot</a></p>
+                    <p><a href="https://uusikielemme.fi">uusi kielemme</a></p>
+                    <p><a href="https://en.wiktionary.org">wiktionary</a></p>
+                    <p>&nbsp;&#x2514;&#x2574;<a href="https://en.wiktionary.org/wiki/Category:Finnish_language" class="nested">finnish language</a></p>
+                    <p><a href="https://letsdecentralize.org/">let's decentralize</a></p>
+                    <p><a href="https://i3wm.org/docs/userguide.html">i3 user's guide</a></p>
+                    <p><a href="https://the-eye.eu/public/">the-eye.eu</a></p>
+                    <p><a href="https://desuarchive.org">desuarchive</a></p>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="searchbar">
+                <form name="search" action="https://search.disroot.org/search?q=" target="_blank" method="get">
+                    <input type="text" autocomplete="off" placeholder="search..." name="q" class="searchinput">
+                </form>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            var months = ['January','February','March','April','May','June','July', 'August','September','October','November','December'];     
+            var tomorrow = new Date();
+            tomorrow.setTime(tomorrow.getTime() + (1000*3600*24));       
+            document.getElementById("spanDate").innerHTML = months[tomorrow.getMonth()] + " " + tomorrow.getDate() + ", " + tomorrow.getFullYear();
+        </script>
+    </body>
+</html>
